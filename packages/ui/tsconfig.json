@@ -1,8 +1,8 @@
 {
-  "extends": "@workspace/typescript-config/react-library.json",
+  "extends": "@testbear/typescript-config/react-library.json",
   "compilerOptions": {
     "paths": {
-      "@workspace/ui/*": ["./src/*"]
+      "@testbear/ui/*": ["./src/*"]
     }
   },
   "include": ["."],

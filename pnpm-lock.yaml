@@ -8,10 +8,10 @@ importers:
 
   .:
     devDependencies:
-      '@workspace/eslint-config':
+      '@testbear/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
-      '@workspace/typescript-config':
+      '@testbear/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
       prettier:
@@ -29,7 +29,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@workspace/ui':
+      '@testbear/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       lucide-react:
@@ -51,6 +51,12 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.3.0
+      '@testbear/eslint-config':
+        specifier: workspace:^
+        version: link:../../packages/eslint-config
+      '@testbear/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@types/node':
         specifier: ^20
         version: 20.19.41
@@ -60,12 +66,6 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.2.3(@types/react@19.2.15)
-      '@workspace/eslint-config':
-        specifier: workspace:^
-        version: link:../../packages/eslint-config
-      '@workspace/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
       eslint:
         specifier: ^9
         version: 9.39.4(jiti@2.7.0)
@@ -153,6 +153,12 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.3.0
+      '@testbear/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@testbear/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       '@turbo/gen':
         specifier: ^2.9.15
         version: 2.9.15(@types/node@20.19.41)
@@ -165,12 +171,6 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.2.3(@types/react@19.2.15)
-      '@workspace/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
-      '@workspace/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       eslint:
         specifier: ^9
         version: 9.39.4(jiti@2.7.0)

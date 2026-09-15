@@ -1,15 +1,19 @@
 import { Geist, Geist_Mono } from "next/font/google"
 
-import "@workspace/ui/globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@workspace/ui/lib/utils";
+import "@testbear/ui/globals.css"
+import { ThemeProvider } from "@testbear/web/components/theme-provider"
+import { cn } from "@testbear/ui/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'})
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata = {
+  title: "TestBear | Test automation and CICD Suite for AI era"
+}
 
 export default function RootLayout({
   children,
