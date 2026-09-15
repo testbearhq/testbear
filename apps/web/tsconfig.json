@@ -1,9 +1,9 @@
 {
-  "extends": "@workspace/typescript-config/nextjs.json",
+  "extends": "@testbear/typescript-config/nextjs.json",
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"],
-      "@workspace/ui/*": ["../../packages/ui/src/*"]
+      "@testbear/web/*": ["./*"],
+      "@testbear/ui/*": ["../../packages/ui/src/*"]
     },
     "plugins": [
       {
